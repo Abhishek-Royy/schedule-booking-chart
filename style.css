@@ -240,7 +240,7 @@ body {
     }
 
     .main>h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .container {
@@ -269,4 +269,13 @@ body {
         width: 80%;
     }
 
+}
+
+
+/* Tab view */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        width: 97%;
+        padding-inline: 2px;
+    }
 }
