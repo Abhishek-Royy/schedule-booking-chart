@@ -14,7 +14,6 @@ body {
 .main {
     width: 100%;
     min-height: 100vh;
-    /* background-color: aquamarine; */
     padding-inline: 15vw;
 }
 
@@ -42,7 +41,6 @@ body {
 .calender>.box {
     width: 100%;
     height: auto;
-    /* background-color: rgb(255, 255, 255); */
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 10px;
 }
@@ -50,7 +48,6 @@ body {
 .calender>.box>.header {
     width: 100%;
     height: 50px;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -156,16 +153,21 @@ body {
 }
 
 
-
-
-.sec-2 {
+.sec-2,
+.sec-3,
+.sec-4,
+.sec-5 {
     width: 18%;
     height: 100%;
     background-color: #afafaf;
     border-left: 1px solid white;
 }
 
-.sec-2>ul>.lane {
+
+.sec-2>ul>.lane-1,
+.sec-3>ul>.lane-2,
+.sec-4>ul>.lane-3,
+.sec-5>ul>.lane-4 {
     font-size: 19px;
     font-weight: 600;
     background-color: black;
@@ -173,7 +175,10 @@ body {
 }
 
 
-.sec-2>ul>li {
+.sec-2>ul>li,
+.sec-3>ul>li,
+.sec-4>ul>li,
+.sec-5>ul>li {
     width: 100%;
     height: calc(75vh / 15);
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -187,14 +192,13 @@ body {
 }
 
 
-
-.selection-date{
+.selection-date {
     width: 100%;
     height: 30vh;
     margin-top: 10px;
 }
 
-.selection-date>.wrapper{
+.selection-date>.wrapper {
     width: 100%;
     height: auto;
     border-bottom: 1px solid black;
@@ -203,17 +207,17 @@ body {
     justify-content: space-between;
 }
 
-.wrap-1{
+.wrap-1 {
     line-height: 40px;
 }
 
-.wrap-2{
+.wrap-2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.selection-date>button{
+.selection-date>button {
     width: 170px;
     padding-block: 15px;
     font-weight: 700;
@@ -231,7 +235,7 @@ body {
 /* Mobile View */
 @media only screen and (max-width: 767px) {
     .main {
-        
+
         padding-inline: 5px;
     }
 
@@ -254,12 +258,13 @@ body {
         width: 95%;
         margin: auto;
     }
-    .selection-date{
-        width:95%;
-       margin: auto;
+
+    .selection-date {
+        width: 95%;
+        margin: auto;
     }
 
-    .selection-date>button{
+    .selection-date>button {
         left: 0;
         width: 80%;
     }

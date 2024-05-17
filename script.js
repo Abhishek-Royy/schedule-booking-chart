@@ -81,7 +81,9 @@ btn.forEach((button) => {
 
 // *********MAIN PROBLEM*************
 document.addEventListener("DOMContentLoaded", function () {
-  let listItems = document.querySelectorAll(".schedule .sec-2 ul li");
+  let listItems = document.querySelectorAll(
+    ".schedule .sec-2 ul li,.schedule .sec-3 ul li,.schedule .sec-4 ul li,.schedule .sec-5 ul li"
+  );
 
   listItems.forEach(function (item) {
     item.addEventListener("click", function () {
